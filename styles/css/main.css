@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.loader {
+  border: 0.6rem solid #f3f3f3;
+  border-top: 0.6rem solid #3498db;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+@media screen and (max-width: 600px) {
+  .loader {
+    border: 0.4rem solid #f3f3f3;
+    border-top: 0.4rem solid #3498db;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.main-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 25rem 1fr;
+      grid-template-rows: 25rem 1fr;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Rubik", sans-serif;
+}
+
+.input-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-image: url("../../dist/img/pattern-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.input-section h2 {
+  margin: 3rem 0;
+  color: #fff;
+  font-size: 2.7rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 924px) {
+  .input-section h2 {
+    font-size: 2.4rem;
+  }
+}
+
+.input-section form {
+  position: relative;
+  width: 85%;
+  max-width: 45rem;
+}
+
+.ip-check {
+  width: 100%;
+  padding: 1.5rem 4rem 1.5rem 1.7rem;
+  border-radius: 1.1rem;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+}
+
+.ip-check::-webkit-input-placeholder {
+  font-family: inherit;
+}
+
+.ip-check:-ms-input-placeholder {
+  font-family: inherit;
+}
+
+.ip-check::-ms-input-placeholder {
+  font-family: inherit;
+}
+
+.ip-check::placeholder {
+  font-family: inherit;
+}
+
+.ip-check:focus {
+  outline: none;
+}
+
+.ip-check:hover {
+  cursor: pointer;
+}
+
+.btn {
+  position: absolute;
+  top: 0;
+  right: -1rem;
+  height: 100%;
+  padding: 0 1.7rem;
+  background-color: #141414;
+  border: none;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  -webkit-transition: background 200ms ease;
+  transition: background 200ms ease;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #3d3d3d;
+  cursor: pointer;
+}
+
+.btn img {
+  width: 85%;
+}
+
+.info-banner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(22rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  position: relative;
+  top: 4rem;
+  z-index: 2;
+  border-radius: 1.1rem;
+  width: 80%;
+  background-color: #fff;
+  padding: 4rem 2rem;
+  -webkit-box-shadow: -1px 8px 63px -41px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px 8px 63px -41px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 600px) {
+  .info-banner {
+    padding: 2rem;
+  }
+}
+
+.row {
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .row:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 924px) {
+  .row {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    margin-bottom: 1rem;
+  }
+}
+
+.row .title {
+  display: block;
+  margin-bottom: 1rem;
+  color: #909090;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.row:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .row:not(:last-child) {
+    border-right: none;
+  }
+}
+
+.row .result {
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 924px) {
+  .row .result {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .row .result {
+    font-size: 2rem;
+  }
+}
+
+.map {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.map img {
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,9 @@
+$font: 'Rubik', sans-serif;
+$dark-gray: hsl(0, 0%, 17%);
+$gray: hsl(0, 0%, 59%);
+
+@mixin mediaQuery($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
